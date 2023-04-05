@@ -8,7 +8,7 @@ metadata:
     my-image.ingress.kubernetes.io/use-regex: "true"
     my-image.ingress.kubernetes.io/rewrite-target: /$1
 spec:
-  ingressClassName: kubernetes.io/ingress.class: alb
+  kubernetes.io/ingress.class: alb
   rules:
   - host: test.team2.com
     http:
