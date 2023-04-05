@@ -5,7 +5,8 @@ metadata:
   namespace: devops-intermidate
   annotations:
     alb.ingress.kubernetes.io/scheme: internet-facing
-    alb.ingress.kubernetes.io/target-type: ip  
+    alb.ingress.kubernetes.io/target-type: ip
+    alb.ingress.kubernetes.io/ip-address-type: dualstack
 spec:
   ingressClassName: alb
   rules:
