@@ -15,6 +15,6 @@ spec:
           pathType: Prefix
           backend:
             service:
-              name: service-davo
+              name: nginx-service
               port:
                 number: 80
