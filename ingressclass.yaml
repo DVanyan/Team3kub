@@ -3,4 +3,4 @@ kind: IngressClass
 metadata:
   name: awesome-class
 spec:
-  controller: ingress.k8s.aws/alb
+  controller: alb
