@@ -17,4 +17,4 @@ spec:
             service:
               name: service-davo
               port:
-                number: 443
+                number: 80
