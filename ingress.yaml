@@ -2,7 +2,7 @@ apiVersion: networking.k8s.io/v1
 kind: Ingress
 metadata:
   name: minimal-ingress
-  namespace: devopsintermidate
+  namespace: devops-intermidate
 spec:
   ingressClassName: alb
   rules:
