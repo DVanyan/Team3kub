@@ -4,7 +4,7 @@ metadata:
   name: minimal-ingress
   namespace: devops-intermidate
 spec:
-  ingressClassName: alb
+  ingressClassName: awesome-class
   rules:
   - http:
       paths:
