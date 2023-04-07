@@ -14,5 +14,5 @@ spec:
         paths:
           - path: /*
             backend:
-              serviceName: "devops-menq-meroncov"
+              serviceName: "nginx-service"
               servicePort: 80
