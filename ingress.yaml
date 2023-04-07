@@ -1,17 +1,18 @@
-apiVersion: networking.k8s.io/v1
+apiVersion: extensions/v1beta1
 kind: Ingress
 metadata:
-  name: my-ingress
-  namespace: devops-intermidate
+  name: "devops-intermidate"
+  namespace: "devops-intermidate"
+  annotations:
+    kubernetes.io/ingress.class: alb
+  labels:
+    app: nginx
 spec:
-  ingressClassName: alb
   rules:
-    - http:
+    - host: menq.meroncov.com
+      http:
         paths:
-        - path: /
-          pathType: Prefix
-          backend:
-            service:
-              name: nginx
-              port:
-                number: 80
+          - path: /*
+            backend:
+              serviceName: "devops-menq-meroncov"
+              servicePort: 80
